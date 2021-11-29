@@ -35,6 +35,10 @@ export default {
     cursor: pointer;
     transition: .3s;
 
+    &.opacity {
+      opacity: .8;
+    }
+
 
     &:hover {
       opacity: .8;

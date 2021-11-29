@@ -59,6 +59,15 @@ export default {
   methods: {
     startGame(gameStarted, buyingGames){
       this.$emit('gameStarted', gameStarted, buyingGames)
+
+      document.querySelectorAll('.chest').forEach((el)=> {
+        el.classList.add('opacity');
+      })
+      setTimeout(()=> {
+        document.querySelectorAll('.chest').forEach((el)=> {
+          el.classList.move('opacity');
+        })
+      }, 1000)
     },
     buyingGames(qty){
       this.$emit('buyingGames', qty)
