@@ -65,9 +65,9 @@ export default {
       })
       setTimeout(()=> {
         document.querySelectorAll('.chest').forEach((el)=> {
-          el.classList.move('opacity');
+          el.classList.remove('opacity');
         })
-      }, 1000)
+      }, 500)
     },
     buyingGames(qty){
       this.$emit('buyingGames', qty)
